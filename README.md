@@ -3,24 +3,15 @@
 
 Установите зависимости:
 
-arduino
-Копировать
-Редактировать
 docker compose run composer install
 Скопируйте файл .env.example в .env и заполните необходимые переменные окружения.
 Данные для подключения к базе данных можно найти в docker-compose.yaml.
 
 Запустите контейнеры:
 
-nginx
-Копировать
-Редактировать
 docker compose up webserver -d
 Выполните миграции и сидирование:
 
-sql
-Копировать
-Редактировать
 docker exec -it z-test-backend-app-1 php artisan migrate --seed
 При необходимости замените z-test-backend-app-1 на имя вашего контейнера.
 
@@ -29,11 +20,8 @@ docker exec -it z-test-backend-app-1 php artisan migrate --seed
 Документация API
 Документация доступна по адресу:
 
-bash
-Копировать
-Редактировать
 /docs/api
-Сгенерирована с помощью инструмента Scramble.
+Сгенерирована с помощью инструмента Scramble (https://scramble.dedoc.co/).
 
 Реализованный функционал
 Обработка четырёх HTTP-запросов:
